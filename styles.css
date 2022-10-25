@@ -7,20 +7,19 @@ body{
 header{
     font-weight: 200;
 }
-header > div{
+header div{
     padding-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    color:white;
     padding-right: 10px;
 } 
 ul{
     display: flex;
     list-style: none;
 }
-header div nav ul li a{
+a{
     text-decoration: none;
     color: white;
     padding-inline: 10px;
