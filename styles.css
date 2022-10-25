@@ -1,0 +1,128 @@
+html{
+    font-family: 'Source Serif Pro', serif;
+}
+body{
+    margin:0px
+}
+header{
+    font-weight: 200;
+}
+header > div{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    padding-right: 10px;
+} 
+ul{
+    display: flex;
+    list-style: none;
+}
+header div nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding-inline: 10px;
+}
+img{
+    width: 100%;
+}
+.image{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+}
+.image-cont{
+    min-height: 100vh;
+}
+@media all and (max-width: 1000px){
+    .image {
+        height:100%;
+        object-fit: cover;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
+.image div h1{
+    font-size:5vw;
+}
+.head-block {
+    position: absolute;
+    text-align: center;
+    color:white;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button{
+    font-family:'Source Serif Pro', serif ;
+    font-size: 20px;
+    color: white;
+    border: 1px solid;
+    border-color: white;
+    background-color: black;
+    padding: 2vh;
+}
+.button:hover{
+    border-radius: 2px ;
+    border-color: yellow;
+}
+.grid3 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vh;
+    padding-inline: 2vh;
+}
+@media all and (max-width: 700px){
+    .grid3 {
+        grid-template-columns: 1fr;
+        gap: 5vh;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
+#bigimage{
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+.grid2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 10vh;
+    padding-inline: 5vh;
+    text-align: center;
+}
+
+@media all and (max-width: 700px){
+    .grid2 {
+        grid-template-columns: 1fr;
+        gap: 5vh;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+.section{
+    text-align: center;
+}
+footer{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
